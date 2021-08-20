@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 6</title>
+        <!--Link para utilizar Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!--Inicio div container-->
+        <div class="container mb-4">
+            <h1>Mi cuenta corriente</h1>
+            
+            <!--Creacion del div que contendra al input-->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" id="monto" class="form-control" autofocus>
+            </div>
+            <!--Fin div-->
+            
+            <!--Creacion del div que contendra al alert y a los botones-->
+            <div class="row">
+                <div class="col-8">
+                    <div class="alert alert-warning float-left" id='content'>
+                
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-group d-inline float-right">
+                        <a href="#" class="btn btn-success mb-3" onclick="depositar()">Depositar</a>
+                        <a href="#" class="btn btn-danger mb-3 " onclick="extraer()">Extraer</a>
+                    </div>
+                </div>
+            </div>
+            <!--Fin div-->
+            
+            <!--Creacion de la tabla-->
+            <table class="table table-bordered" id="tabla"> 
+                <thead>
+                <tr>
+                    <th scope="col">Fecha del movimiento</th>
+                    <th scope="col">Monto</th>
+                    <th scope="col">Balance parcial</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <!--Fin tabla-->
+        </div>
+        <!--Fin div container-->
+    </body>
+
+    <footer>
+        <!--Inicio div container-->
+        <div class="container">
+            <hr>
+            <div class="container justify-content-center align-items-center d-flex pt-2">
+                <p>&copy Jhonny Figuera</p>
+            </div>
+        </div>
+        <!--Fin div container-->
+    </footer>
+
+    <!--Llamado al archivo funciones.js-->
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+</html>
